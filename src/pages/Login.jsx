@@ -60,14 +60,7 @@ function Login() {
                 <span className="error">Password is Required</span>
               )}
             </div>
-            <button style={{
-              marginTop:"10px",
-              width:"100%",
-              borderRadius:"15px",
-              backgroundColor:"blue",
-              padding:"10px 15px",
-              color:"white"
-            }} type="submit">Login</button>
+            <button type="submit">Login</button>
           </form>
         </div>
       </>

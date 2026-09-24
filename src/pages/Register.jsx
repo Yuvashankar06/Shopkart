@@ -1,5 +1,4 @@
 import React from "react";
-import './Register.css'
 import { useForm } from "react-hook-form";
 function Register() {
   const {
@@ -43,9 +42,6 @@ function Register() {
             <input
               type="email"
               id="email"
-              style={{
-                
-              }}
               {...register(
                 "email",
                 { required: true },
@@ -77,16 +73,7 @@ function Register() {
               <span className="error">Password is Required</span>
             )}
           </div>
-          <button 
-          style={{
-            marginTop:"10px",
-            width:"100%",
-            borderRadius:"15px",
-            backgroundColor:"blue",
-            padding:"10px 15px",
-            color:"white"
-          }} 
-          type="submit">Register</button>
+          <button type="submit">Register</button>
         </form>
       </div>
     </>

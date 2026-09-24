@@ -20,7 +20,7 @@ function Products() {
 
   // applying logic for filteration
   const filteredProduct = useMemo(() => {
-    return products.filter((product) => product.price < 100);
+    return products.filter((product) => product.price);
   }, [products]);
   if(error){
     return <h2>{error}</h2>
@@ -28,11 +28,12 @@ function Products() {
 
   return (
     <>
-      <h1>Products</h1>
+      <h1 id="product-heading">Products</h1>
       <div className="products-grid">
         {filteredProduct.map((product) => (
           <ProductCard
             key={product.id}
+            id={product.id}
             title={product.title}
             price={product.price}
             image={product.image}
